@@ -99,21 +99,10 @@ mutation { newUser(nUser: { firstName: "Juan", lastName: "Perez", email: "juan@e
 
 ```
 
-## Desarrollo
-
-Este proyecto está configurado para ser desarrollado y escalado fácilmente. A continuación se detallan algunos de los aspectos clave:
-
-- Prisma se encarga de la interacción con la base de datos, incluyendo migraciones, consultas y semillas.
-- Apollo Server se utiliza para configurar y servir la API de GraphQL.
-- Next.js facilita la creación de la interfaz de usuario y las rutas.
-- TailwindCSS proporciona una forma rápida y flexible de diseñar la interfaz.
-
----
-
 ## Comandos útiles
 
 - Iniciar el servidor de desarrollo: `npm run dev`
-- Ejecutar migraciones de Prisma: `npx prisma migrate deploy`
-- Sembrar la base de datos con datos de prueba: `npm run prisma:seed`
+- Ejecutar migraciones de Prisma: `npx prisma migrate deploy` cada vez que se hagan cambios o nuevos modelos en schema.prisma
+- Sembrar la base de datos con datos de prueba: `npm run prisma:seed` por defecto debería de correr el seed de prisma con cada nueva migracion.
 
 ---
